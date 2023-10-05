@@ -1,0 +1,10 @@
+<!-- chat_message_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#C22F2F" /> <!-- Set your desired background color -->
+    <corners
+        android:bottomLeftRadius="20dp"
+        android:bottomRightRadius="20dp"
+        android:topLeftRadius="0dp"
+        android:topRightRadius="20dp" /> <!-- Set the corner radius as per your design -->
+</shape>
+
