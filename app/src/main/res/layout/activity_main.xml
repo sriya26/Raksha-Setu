@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+   >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background">
+            <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="55dp"
+            android:fontFamily="@font/roboto"
+            android:text="Raksha Setu"
+            android:textColor="@color/black"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/tagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/heading"
+            android:layout_marginLeft="150dp"
+            android:text="One app. All round protection."
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:id="@+id/fname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/heading"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="100dp"
+            android:text="First Name:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/fentry"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/fname"
+            android:backgroundTint="#04021E"
+            android:layout_marginLeft="50dp"/>
+<!--          android:background="@drawable/edit_text_border"-->
+
+
+
+        <TextView
+            android:id="@+id/lname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fentry"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:text="Last Name:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/lentry"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lname"
+            android:layout_marginLeft="50dp"
+            android:backgroundTint="#04021E" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lentry"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:text="Email:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/eentry"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email"
+            android:layout_marginLeft="50dp"
+            android:backgroundTint="#04021E" />
+
+        <TextView
+            android:id="@+id/pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/eentry"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:text="Enter Password:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/pentry"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pass"
+            android:layout_marginLeft="50dp"
+            android:backgroundTint="#04021E" />
+            <TextView
+                android:id="@+id/atoz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@+id/pentry"
+                android:layout_marginLeft="50dp"
+                android:text="a-z"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/AtoZ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pentry"
+                android:gravity="center"
+                android:text="A-z"
+                android:layout_marginLeft="100dp"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@+id/pentry"
+                android:layout_marginLeft="160dp"
+                android:text="0-9"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/charcount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@+id/pentry"
+                android:text="8 characters"
+                android:layout_marginLeft="220dp"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/atoz"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:text="Choose option:"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="50dp"
+            android:layout_below="@+id/role"
+            android:layout_marginTop="30dp"
+            android:textSize="25dp" />
+
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pentry"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:backgroundTint="#C22F2F"
+            android:text="Register" />
+
+        <TextView
+            android:id="@+id/reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/submit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="Already a user?" />
+
+        <TextView
+            android:id="@+id/reg2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reg"
+            android:layout_centerHorizontal="true"
+            android:onClick="Log_page"
+            android:text="Login here"
+            android:textColor="@color/purple_200"
+            android:textStyle="bold" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

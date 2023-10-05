@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#F3F3F4" >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/roboto"
+        android:text="Raksha Setu"
+        android:textColor="@color/black"
+        android:textSize="40dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading"
+        android:id="@+id/tagline"
+        android:text="One app. All round protection."
+        android:textStyle="bold"
+        android:layout_marginLeft="150dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How can we help you?"
+        android:layout_below="@+id/tagline"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/head"
+        android:textSize="30dp"
+        android:layout_marginTop="60dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="File missing person complaint"
+        android:layout_below="@+id/head"
+        android:id="@+id/b1"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:backgroundTint="#D9D9D9"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        android:layout_marginTop="30dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Request for a Relief Team"
+        android:layout_below="@+id/b1"
+        android:id="@+id/b2"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#D9D9D9"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        android:layout_marginTop="40dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Request for Food and Water Supplies"
+        android:layout_below="@+id/b2"
+        android:textAllCaps="false"
+        android:id="@+id/b3"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#D9D9D9"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        android:layout_marginTop="40dp"
+        />
+        </RelativeLayout>
+</RelativeLayout>
+

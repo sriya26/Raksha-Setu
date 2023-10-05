@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#F3F3F4" >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/roboto"
+        android:text="Raksha Setu"
+        android:textColor="@color/black"
+        android:textSize="40dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading"
+        android:id="@+id/tagline"
+        android:text="One app. All round protection."
+        android:textStyle="bold"
+        android:layout_marginLeft="150dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Location:"
+        android:layout_below="@+id/tagline"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="17dp"
+        android:id="@+id/loc"
+        />
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:id="@+id/lentry"
+        android:layout_below="@+id/tagline"
+        android:layout_toRightOf="@+id/loc"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:src="@drawable/reshot_icon_map_marker_ks456zt2p3"
+        android:layout_below="@+id/tagline"
+        android:layout_toRightOf="@+id/loc"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="170dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Backup Requirement:"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/loc"
+        android:layout_marginTop="40dp"
+        android:textSize="17dp"
+        android:id="@+id/backup"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medical Kits Needed:"
+        android:layout_below="@+id/backup"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:textSize="17dp"
+        android:id="@+id/med"
+        />
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/backup"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@id/med"
+        android:layout_centerInParent="true"
+        android:id="@+id/mednum"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food Supplies Needed:"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/med"
+        android:layout_marginTop="40dp"
+        android:textSize="17dp"
+        android:id="@+id/food"
+        />
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/med"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@id/med"
+        android:layout_centerInParent="true"
+        android:id="@+id/foodnum"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Request"
+        android:layout_below="@id/food"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#C22F2F"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

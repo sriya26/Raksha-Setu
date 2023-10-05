@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RakshaSetu"
+        tools:targetApi="31">
+
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD-D7SirkODXkNKKZ8tVC0CPeycxYVTRf0" />
+
+        <activity
+            android:name=".MapsActivity1"
+            android:exported="false"
+            android:label="@string/title_activity_maps1" />
+        <activity
+            android:name=".Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".landing"
+            android:exported="false"></activity>
+        <activity
+            android:name=".care_items"
+            android:exported="false" />
+        <activity
+            android:name=".monetory"
+            android:exported="false" />
+        <activity
+            android:name=".rt_supply"
+            android:exported="false" />
+        <activity
+            android:name=".assign_mission"
+            android:exported="false" />
+        <activity
+            android:name=".Request_Rescue"
+            android:exported="false" />
+        <activity
+            android:name=".Request_food"
+            android:exported="false" />
+        <activity
+            android:name=".Missing_person"
+            android:exported="false" />
+        <activity
+            android:name=".Donate"
+            android:exported="false" />
+        <activity
+            android:name=".Relief"
+            android:exported="false" />
+        <activity
+            android:name=".Assistance"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2_login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

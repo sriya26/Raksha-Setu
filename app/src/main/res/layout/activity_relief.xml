@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#F3F3F4" >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/roboto"
+        android:text="Raksha Setu"
+        android:textColor="@color/black"
+        android:textSize="40dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading"
+        android:id="@+id/tagline"
+        android:text="One app. All round protection."
+        android:textStyle="bold"
+        android:layout_marginLeft="150dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Location:"
+        android:layout_below="@+id/tagline"
+        android:layout_marginTop="40dp"
+        android:textSize="17dp"
+        android:id="@+id/loc"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lentry"
+        android:layout_below="@+id/tagline"
+        android:layout_toRightOf="@+id/loc"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loc"
+        android:id="@+id/assign"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:text="Assign Rescue Task"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#D9D9D9"
+        android:textColor="#04021E"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/assign"
+        android:id="@+id/rein"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:text="Request Reinforcement"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#D9D9D9"
+        android:textColor="#04021E"/>
+    </RelativeLayout>>
+
+</RelativeLayout>

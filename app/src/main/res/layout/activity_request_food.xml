@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F4"
+    android:backgroundTintMode="add"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/roboto"
+        android:text="Raksha Setu"
+        android:textColor="@color/black"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/tagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading"
+        android:layout_marginLeft="150dp"
+        android:text="One app. All round protection."
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tagline"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Emergency Food and Water Supplies"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/adults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="35dp"
+        android:text="Number of adults (above age 12):"
+        android:textSize="17dp" />
+
+    <NumberPicker
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/head"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/adults" />
+    <!--    <EditText-->
+    <!--        android:layout_width="30dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/head"-->
+    <!--        android:layout_toRightOf="@+id/adults"-->
+    <!--        android:id="@+id/aentry"-->
+    <!--        />-->
+    <TextView
+        android:id="@+id/child"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adults"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="35dp"
+        android:text="Number of children (2-12):"
+        android:textSize="17dp" />
+
+    <NumberPicker
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/adults"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/adults" />
+
+    <TextView
+        android:id="@+id/bab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/child"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="35dp"
+        android:text="Number of infants (0-2):"
+        android:textSize="17dp" />
+
+    <NumberPicker
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/child"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/adults" />
+        <TextView
+            android:id="@+id/loc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bab"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="25dp"
+            android:text="Location:"
+            android:textSize="17dp" />
+
+        <EditText
+            android:id="@+id/lentry"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bab"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@id/loc" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@+id/bab"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@+id/loc"
+            android:src="@drawable/reshot_icon_map_marker_ks456zt2p3"
+            android:onClick="map"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loc"
+        android:layout_marginTop="20dp"
+        android:text="When are the supplies required?"
+        android:layout_marginLeft="35dp"
+        android:textSize="17dp" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_below="@+id/date"
+        android:layout_marginLeft="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:datePickerMode="spinner"
+        android:dayOfWeekBackground="#DA0F0F"
+        android:scrollbarSize="17dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+        android:text="Submit Request"
+        android:backgroundTint="#C22F2F"
+        android:id="@+id/submit"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

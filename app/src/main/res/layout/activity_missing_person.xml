@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#F3F3F4" >
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/roboto"
+        android:text="Raksha Setu"
+        android:textColor="@color/black"
+        android:textSize="40dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading"
+        android:id="@+id/tagline"
+        android:text="One app. All round protection."
+        android:textStyle="bold"
+        android:layout_marginLeft="150dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REPORT MISSING PERSON"
+        android:textStyle="bold"
+        android:layout_below="@id/tagline"
+        android:id="@+id/head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Name:"
+        android:id="@+id/fname"
+        android:layout_below="@id/heading"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"        />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/heading"
+        android:layout_marginTop="100dp"
+       android:layout_toRightOf="@id/loc"
+        android:id="@+id/fentry"
+        android:backgroundTint="@color/teal_200"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age:"
+        android:id="@+id/age"
+        android:layout_below="@id/fentry"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"        />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/fentry"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/loc"
+        android:id="@+id/aentry"
+        android:backgroundTint="@color/teal_200"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sex:"
+        android:id="@+id/sex"
+        android:layout_below="@id/aentry"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"        />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/aentry"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/loc"
+        android:id="@+id/sentry"
+        android:backgroundTint="@color/teal_200"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eye color:"
+        android:id="@+id/eye"
+        android:layout_below="@id/sex"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"        />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/sex"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/loc"
+        android:id="@+id/eentry"
+        android:backgroundTint="@color/teal_200"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hair-color:"
+        android:id="@+id/hair"
+        android:layout_below="@id/eye"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"        />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/eye"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/loc"
+        android:id="@+id/hentry"
+        android:backgroundTint="@color/teal_200"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location last-seen:"
+        android:id="@+id/loc"
+        android:layout_below="@id/hair"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"        />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/hair"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/loc"
+        android:id="@+id/lentry"
+        android:backgroundTint="@color/teal_200"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload latest photograph:"
+        android:id="@+id/photo"
+        android:layout_below="@id/loc"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"        />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/loc"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/photo"
+        android:id="@+id/pentry"
+        android:backgroundTint="@color/teal_200"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Physical description:"
+        android:id="@+id/des"
+        android:layout_below="@id/photo"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(Clothes last seen in, birthmarks,etc)"
+        android:id="@+id/des1"
+        android:layout_below="@id/des"
+        android:layout_marginLeft="30dp"
+        android:textSize="15dp"        />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/des1"
+        android:inputType="textMultiLine"
+        android:lines="2"
+        android:layout_marginTop="5dp"
+        android:id="@+id/dentry"
+        android:backgroundTint="@color/teal_200"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dentry"
+        android:id="@id/submit"
+        android:text="Submit Report"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#C22F2F"/>
+</RelativeLayout>
+

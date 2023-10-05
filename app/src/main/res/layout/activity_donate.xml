@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#F3F3F4" >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/roboto"
+        android:text="Raksha Setu"
+        android:textColor="@color/black"
+        android:textSize="40dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading"
+        android:id="@+id/tagline"
+        android:text="One app. All round protection."
+        android:textStyle="bold"
+        android:layout_marginLeft="150dp"/>
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/D_heading"
+         android:layout_below="@id/tagline"
+         android:layout_centerHorizontal="true"
+         android:textSize="40dp"
+         android:text="Donation Portal"
+         android:layout_marginTop="30dp"
+         android:fontFamily="@font/roboto"
+         android:textStyle="bold"
+         android:textColor="@color/black"
+         />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/D_heading"
+        android:id="@+id/money"
+        android:textSize="23dp"
+        android:textAllCaps="false"
+        android:text="Monetary donations"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#D9D9D9"
+        android:textColor="#04021E"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/money"
+        android:id="@+id/things"
+        android:textSize="23dp"
+        android:textAllCaps="false"
+        android:text="Care Items donation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#D9D9D9"
+        android:textColor="#04021E"/>
+    </RelativeLayout>
+
+</RelativeLayout>
